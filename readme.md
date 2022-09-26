@@ -1,4 +1,4 @@
-#Weather Nowcasting
+Weather Nowcasting
 
 This project focuses of now-casting weather, predicting precipitation values for the next 3hrs using classical machine learning models and deep learning models such as LSTM. 
 
