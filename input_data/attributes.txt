@@ -21,22 +21,13 @@ elevation:
 	axis: radial_elevation_coordinate
 	comment: Elevation of antenna relative to the horizontal plane
 fields:
-	spectrum_width: // FIXME an atmospheric phenomenon or entity involving water or water vapour, such as rain or a cloud
+	spectrum_width: // 
 		data: <ndarray of type: float32 and shape: (6480, 1832)>
 		units: meters_per_second
 		standard_name: doppler_spectrum_width
 		long_name: Spectrum Width
 		valid_max: 63.0
 		valid_min: -63.5
-		coordinates: elevation azimuth range
-		_FillValue: -9999.0
-	differential_phase:
-		data: <ndarray of type: float32 and shape: (6480, 1832)>
-		units: degrees
-		standard_name: differential_phase_hv
-		long_name: differential_phase_hv
-		valid_max: 360.0
-		valid_min: 0.0
 		coordinates: elevation azimuth range
 		_FillValue: -9999.0
 	reflectivity: // FIXME a measure of the ability of a surface to reflect radiation
@@ -46,6 +37,15 @@ fields:
 		long_name: Reflectivity
 		valid_max: 94.5
 		valid_min: -32.0
+		coordinates: elevation azimuth range
+		_FillValue: -9999.0
+	differential_phase:
+		data: <ndarray of type: float32 and shape: (6480, 1832)>
+		units: degrees
+		standard_name: differential_phase_hv
+		long_name: differential_phase_hv
+		valid_max: 360.0
+		valid_min: 0.0
 		coordinates: elevation azimuth range
 		_FillValue: -9999.0
 	differential_reflectivity:
